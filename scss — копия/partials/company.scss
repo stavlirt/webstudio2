@@ -1,0 +1,69 @@
+.company {
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__involded {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-color;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    padding: 25px;
+  }
+
+  &__paragraph {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .company {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .company {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .company {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company {
+    display: block;
+  }
+}

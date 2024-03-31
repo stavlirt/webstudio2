@@ -1,0 +1,170 @@
+.clients {
+
+  padding-top: 60px;
+
+  &__list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  &__link svg {
+    fill: #afb1b8;
+    transition: $transition-property $transition-duration;
+  }
+
+  &__link:hover svg,
+  &__link:focus svg {
+    fill: $main-color;
+  }
+
+  &__link {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    position: relative;
+    width: 170px;
+    height: 92px;
+    transition: $transition-property $transition-duration;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    fill: #a5a5a5;
+  }
+
+  &__link:hover {
+    border: 1px solid $main-color;
+    cursor: pointer;
+  }
+
+  &__link:focus {
+    fill: $main-color;
+    border: 1px solid $main-color;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+  }
+
+  &__link:focus svg {
+    fill: $main-color;
+  }
+
+  &__link:hover svg {
+    fill: $main-color;
+  }
+
+  &__text {
+    color: $second-color;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+  }
+}
+
+.small__svg {
+  width: 95px;
+  height: 60px;
+  top: 14px;
+}
+
+@media screen and (min-width: 320px) {
+
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .clients__text {
+    font-size: 28px;
+  }
+
+  .clients__list {
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 20px) / 1);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .clients__link {
+    width: 210px;
+    height: 92px;
+  }
+
+  .clients__svg {
+    position: absolute;
+    top: 17px;
+    right: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients__list {
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  .clients__link {
+    width: 210px;
+    height: 92px;
+  }
+
+  .clients__svg {
+    position: absolute;
+    top: 17px;
+    right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 20px) / 3);
+  }
+
+  .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+
+  .clients__svg {
+    position: absolute;
+    top: 17px;
+    right: 55px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .clients__text {
+    font-size: 36px;
+  }
+  
+  .clients__list {
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
+
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
+
+  .clients__svg {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+  }
+}

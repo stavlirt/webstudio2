@@ -1,0 +1,140 @@
+.advantage {
+  padding-top: 95px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $second-color;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__item::before {
+    display: block;
+    content: "";
+    background-image: url(../../img/antenna.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+  }
+
+  &__item:nth-child(2)::before {
+    background-image: url(../../img/clock.png);
+  }
+
+  &__item:nth-child(3)::before {
+    background-image: url(../../img/diagram.png);
+  }
+
+  &__item:nth-child(4)::before {
+    background-image: url(../../img/astronaut.png);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .advantage {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantage__title {
+    text-align: center;
+  }
+
+  .advantage__item {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advantage {
+    padding-bottom: 60px;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .advantage__title {
+    text-align: center;
+  }
+
+  .advantage__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .advantage {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  
+  .advantage__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: calc((100% - 30px) / 2);
+    justify-content: space-between;
+  }
+
+  .advantage__item {
+    width: 354px;
+  }
+
+  .advantage__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .advantage {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
+  .advantage__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+  }
+
+  .advantage__item {
+    width: 270px;
+  }
+}

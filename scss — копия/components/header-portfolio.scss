@@ -1,0 +1,310 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+  
+    &__navigation {
+      @extend %flex;
+      position: relative;
+    }
+  
+    &__studio {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $second-color;
+      transition: color $transition-property $transition-duration;
+  
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+    }
+  
+  
+  
+    &__portfolio {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $second-color;
+      transition: color $transition-property $transition-duration;
+  
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+    }
+  
+    &__contacts {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $second-color;
+      transition: color $transition-property $transition-duration;
+  
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+    }
+  
+    &__webstudiobl {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: #000000;
+    }
+  
+    &__page {
+      &.h__port {
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-radius: 2px;
+          background: $main-color;
+          display: block;
+          position: absolute;
+          bottom: -25px;
+          transition: width 250ms cubic-bezier(0.4, 0, 0.02, 1),
+            height 250ms cubic-bezier(0.4, 0, 0.02, 1);
+        }
+        
+        &:hover::after {
+          width: 72px;
+          height: 4px;
+        }
+      }
+    }
+  
+    &__tel {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: #757575;
+      transition: color $transition-property $transition-duration;
+  
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+  
+      &:focus svg {
+        fill: $main-color;
+      }
+    }
+  
+    &__mail {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: #757575;
+      transition: color $transition-property $transition-duration;
+  
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+  
+      &:focus svg {
+        fill: $main-color;
+      }
+    }
+  
+    &__mail,
+    &__tel {
+      @extend %flex;
+      transition: color $transition-duration $transition-property;
+    }
+  
+    &__logo {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: $main-color;
+      margin-right: 76px;
+    }
+  
+    &__list {
+      @extend %flex;
+      margin-right: 344px;
+    }
+  
+    &__list2 {
+      @extend %flex;
+      position: relative;
+    }
+  }
+  
+  /* навігація */
+  
+  
+  
+  .hstudio {
+    margin-left: 93px;
+  }
+  
+  .h__port,
+  .h__port,
+  .h__cont {
+    margin-left: 50px;
+  }
+  
+  .h__num {
+    margin-left: 50px;
+    white-space: nowrap;
+  }
+  
+  .smartphone__svg {
+    margin-right: 10px;
+  }
+  
+  .mail__svg {
+    margin-right: 10px;
+  }
+  
+  .h__num:hover {
+    fill: $main-color;
+  }
+  
+  .h__mail:hover {
+    fill: $main-color;
+  }
+  
+  .h__num,
+  .h__mail {
+    @extend %flex;
+    fill: #757575;
+  }
+  
+  @media screen and (min-width: 320px) {
+    .header__navigation {
+      margin-right: 0;
+      gap: 20px;
+    }
+  
+    .header__list,
+    .header__list2 {
+      display: none;
+    }
+  
+    .header__list {
+      margin-right: auto;
+    }
+  
+    .menu__header {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 480px) {
+    .header__navigation {
+      margin-right: 0;
+      gap: 150px;
+    }
+  
+    .header__list,
+    .header__list2 {
+      display: none;
+    }
+  
+    .menu__header {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .menu__header {
+      display: none;
+    }
+  
+    .header__list,
+    .header__list2 {
+      display: block;
+    }
+  
+    .header__list {
+      display: flex;
+      gap: 50px;
+      flex-direction: row;
+      margin-left: 88px;
+      margin-right: 96px;
+    }
+  
+    .header__list2 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+    }
+  
+    .header__logo {
+      margin-right: 0px;
+    }
+  
+    .h__port,
+    .h__port,
+    .h__cont {
+      margin-left: 0px;
+    }
+  
+    .hstudio {
+      margin-left: 0px;
+    }
+  
+    .h__num {
+      display: block;
+      margin-right: 14px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+  
+    .h__mail {
+      display: block;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    
+    .header__navigation {
+      margin-right: 0px;
+      gap: 0px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+  
+    .header {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+  
+    .header__navigation {
+      gap: 0px;
+    }
+    
+    .header__list {
+      margin-left: 93px;
+      margin-right: 315px;
+    }
+  
+    .header__list2 {
+      @extend %flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+  
+    .h__num {
+      display: block;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+  }

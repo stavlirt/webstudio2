@@ -1,0 +1,14 @@
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./base/common";
+@import "./base/reset";
+@import "./components/header";
+@import "./partials/hero";
+@import "./partials/advantage";
+@import "./partials/clients";
+@import "./partials/company";
+@import "./partials/team";
+@import "./components/footer";
+@import "./partials/modal";
+@import "./mobile_menu.scss"
